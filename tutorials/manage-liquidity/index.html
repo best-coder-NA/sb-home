@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+
+    <meta name="twitter:site" content="@pangolindex" />
+    <meta name="twitter:creator" content="@pangolindex" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BGZ24YKT8V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BGZ24YKT8V");
+    </script>
+
+    <title>Manage Liquidity - Pangolin</title><meta name="twitter:card" content="summary_large_image" data-svelte="svelte-1eit3it"><meta property="og:url" content="https://pangolin.exchange/tutorials/manage-liquidity" data-svelte="svelte-1eit3it"><meta property="og:type" content="article" data-svelte="svelte-1eit3it"><meta name="twitter:image" content="https://pangolin.exchange/OGImage.png" data-svelte="svelte-1eit3it"><meta property="og:image" content="https://pangolin.exchange/OGImage.png" data-svelte="svelte-1eit3it"><meta name="twitter:description" content="A community-driven decentralized exchange for Avalanche and Ethereum assets with fast settlement, low transaction fees, and a democratic distribution–powered by Avalanche." data-svelte="svelte-1eit3it"><meta property="og:description" content="A community-driven decentralized exchange for Avalanche and Ethereum assets with fast settlement, low transaction fees, and a democratic distribution–powered by Avalanche." data-svelte="svelte-1eit3it"><meta name="twitter:title" content="Manage Liquidity - Pangolin" data-svelte="svelte-1eit3it"><meta property="og:title" content="Manage Liquidity - Pangolin" data-svelte="svelte-1eit3it">
+
+<style data-svelte>undefined</style>
+
+<link rel="modulepreload" href="/_app/start-31e9da7f.js">
+			<link rel="modulepreload" href="/_app/chunks/index-847446aa.js">
+			<link rel="modulepreload" href="/_app/pages/tutorials/manage-liquidity.svelte-5c3ad479.js">
+			<link rel="modulepreload" href="/_app/chunks/ContentsLayout-bf5c69e7.js">
+			<link rel="stylesheet" href="/_app/assets/start-5309ea5c.css">
+
+
+		<script type="module">
+			import { start } from "/./_app/start-31e9da7f.js";
+			start({
+				target: document.body,
+				host: location.host,
+				paths: {"base":"","assets":"/."},
+				status: 200,
+				error: null,
+				session: void 0
+			});
+		</script>
+  </head>
+
+  <body class="mx-auto font-sans antialiased bg-white">
+    
+
+
+<div class="px-4 sm:px-6"><div class="relative bg-white"><div class="mx-auto max-w-9xl"><div class="flex justify-between items-center py-2 border-b-2 border-gray-100 md:justify-start md:space-x-10"><div class="flex justify-start lg:flex"><a href="/"><span class="sr-only">Snowball</span>
+          <img width="200px" src="/logo-snowball.svg" alt="Snowball"></a></div>
+      <div class="-my-2 -mr-2 md:hidden "><button type="button" class="inline-flex justify-center items-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-gray-500 focus:ring-2 focus:ring-inset"><span class="sr-only">Open menu</span>
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div>
+      <nav class="hidden ml-10 lg:space-x-12 md:flex"><a href="https://app.pangolin.exchange" target="_blank" class="inline-flex items-center text-base font-medium text-darkblue bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2">Home
+        </a>
+
+        <a href="https://info.pangolin.exchange" target="_blank" class="inline-flex items-center text-base font-medium text-darkblue bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2">SnowGlobe
+        </a>
+
+        <a href="https://gov.pangolin.exchange" target="_blank" class="inline-flex items-center text-base font-medium text-darkblue bg-white rounded-md transition-colors hover:text-gray-900 focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2">IceQueen
+        </a>
+
+        <div class="relative"><button type="button" class="text-gray-500 transition-colors group inline-flex items-center text-darkblue hover:text-gray-900 text-base font-medium bg-white rounded-md focus:outline-none focus:ring-gray-500 focus:ring-offset-2 focus:ring-2"><span>Instructions</span>
+            <svg class="text-gray-400 transition-colors ml-2 w-5 h-5 text-gray-400 group-hover:text-gray-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+          </div></nav>
+      <div class="hidden justify-end items-center space-x-4 md:flex md:flex-1 lg:w-0"><a class="flex-none py-1 px-2 w-full text-lg font-semibold leading-6 text-orange-50 bg-snowball-blue rounded-lg border border-transparent transition-colors duration-200 hover:bg-snowball-darkblue focus:outline-none focus:ring-orange-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:inline sm:w-auto" href="https://app.pangolin.exchange" target="_blank">Connect Wallet</a>
+        <a class="flex-none py-1 px-2 w-full text-lg font-semibold leading-6 text-orange-50 bg-snowball-lightblue rounded-lg border border-transparent transition-colors duration-200 hover:bg-snowball-darkblue focus:outline-none focus:ring-orange-900 focus:ring-offset-white focus:ring-offset-2 focus:ring-2 sm:inline sm:w-auto" href="https://app.pangolin.exchange" target="_blank"><svg class="m-1" width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.3121 12.3109C16.8398 12.72 15.2853 12.7308 13.8076 12.3422C12.3298 11.9535 10.9817 11.1793 9.90122 10.0989C8.82073 9.01837 8.04657 7.67032 7.6579 6.19253C7.26923 4.71475 7.28 3.16025 7.6891 1.68799L7.68934 1.68806C6.23722 2.09203 4.91629 2.86943 3.85813 3.94281C2.79998 5.0162 2.04155 6.34811 1.65838 7.80586C1.27522 9.26361 1.2807 10.7963 1.67428 12.2513C2.06787 13.7063 2.83581 15.0327 3.90161 16.0985C4.96741 17.1643 6.29387 17.9322 7.74885 18.3258C9.20382 18.7194 10.7365 18.7248 12.1943 18.3417C13.652 17.9585 14.9839 17.2 16.0573 16.1419C17.1307 15.0837 17.9081 13.7628 18.312 12.3106L18.3121 12.3109Z" fill="#33A9FF" stroke="#33A9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+        </div></div></div>
+
+  </div>
+
+
+  
+
+<div class="flex-auto w-full min-w-0 lg:static lg:max-h-full lg:overflow-visible"><div class="flex justify-between w-full"><div class="flex-auto min-w-0"><article slot="content" class="mt-10 mb-8 prose lg:prose-xl sm:mb-10 sm:mt-14"><h2>Manage Liquidity on Pangolin</h2>
+
+    <p><i>Create new liquidity pools, or add and remove liquidity on existing pools </i></p>
+
+    <p>Pangolin allows token holders to add liquidity to pools. By adding liquidity, you receive PGL tokens, which is a
+      representation of your ownership of the pool. After adding liquidity to a pool, you will see how you can use those
+      PGL tokens to earn PNG <a href="/tutorials/earn-png" target="_blank" class="hover:no-underline">here</a>. If you
+      have ETH or Ethereum ERC-20s you want to use on Pangolin, please follow the bridge tutorial
+      <a href="/tutorials/transfer-from-ethereum" target="_blank" class="hover:no-underline">here</a>.
+    </p>
+
+    <p><strong>Note: You may only receive PNG rewards from supported pools, which can be found under the following section on
+        the <a href="/litepaper#distribution-breakdown" target="_blank" class="hover:no-underline">litepaper</a>:
+        Community - Liquidity Mining Allocation (95% of PNG)</strong></p>
+
+    <h3 class="flex whitespace-pre-wrap group" id="add-liquidity"><a href="#add-liquidity" class="absolute no-underline opacity-0 after:hash group-hover:opacity-100" aria-label="Anchor" style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span>Add Liquidity</span></h3>
+
+    <p>Pangolin allows users (liquidity providers) with Avalanche and Ethereum tokens to deposit them and earn yield from
+      exchange fees. Liquidity providers can create a new liquidity pool or add liquidity to an existing one. Liquidity
+      providers will earn at least 0.25% of all trades on the deposited token pair proportional to the share of the
+      pool. Fees are added to the pool and accrue in real-time. Each pool has its own return, which is determined by a
+      function.
+    </p>
+
+    <p>You have two options when adding liquidity:</p>
+    <ol><li><a href="#create-a-new-liquidity-pool" class="hover:no-underline">Create a new liquidity pool</a></li>
+      <li><a href="#add-to-liquidity-pool" class="hover:no-underline">Add to an existing liquidity pool</a></li></ol>
+
+    <h4 class="flex whitespace-pre-wrap group" id="create-a-new-liquidity-pool"><a href="#create-a-new-liquidity-pool" class="absolute no-underline opacity-0 after:hash group-hover:opacity-100" aria-label="Anchor" style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span>Create a New Liquidity Pool</span></h4>
+
+    <p>If a token pair doesn’t exist, you must create a new liquidity pool. The price of the tokens will be determined by
+      the ratio of what you deposit. For example, if you deposit 1 PNG and 5 DAI into this new liquidity pool, there
+      will be an initial price of 5 DAI per PNG or 0.2 PNG per DAI. These prices are dynamic and will change as
+      liquidity is added or removed and the ratio of the pool adjusts.
+    </p>
+
+    <img src="/tutorials/manage-liquidity/001.png">
+
+    <ol><li>Determine the ratio of the new liquidity pool by inputting the amounts you will deposit for each token</li>
+      <li>Select &quot;Supply&quot;</li>
+      <li><p>Select &quot;Create Pool &amp; Supply&quot;
+          <img src="/tutorials/manage-liquidity/002.png"></p></li>
+      <li>Confirm the transaction and finalize the transaction.</li></ol>
+
+    <h4 class="flex whitespace-pre-wrap group" id="add-to-liquidity-pool"><a href="#add-to-liquidity-pool" class="absolute no-underline opacity-0 after:hash group-hover:opacity-100" aria-label="Anchor" style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span>Add to an Existing Liquidity Pool
+      </span></h4>
+
+    <ol><li><h5><strong>Select &quot;Pool&quot; on the top left</strong></h5>
+        <img src="/tutorials/manage-liquidity/003.png"></li>
+      <li><h5><strong>Select &quot;Add Liquidity&quot;</strong></h5>
+        <img src="/tutorials/manage-liquidity/004.png"></li>
+      <li><h5><strong>Choose the token you would like to add to the liquidity pool.</strong></h5>
+        <p>Let’s say you choose AVAX as the token you would like to deposit. Once you choose AVAX, it will ask you to
+          decide on the token pair you would like to enter, which is the liquidity pool. When you choose that token
+          pair, it will require you to add an equivalent value of that token pair.
+        </p>
+
+        <ol><li>Choose the token, and enter the amount you would like to deposit</li>
+          <li>Choose the token pair you would like to deposit. <br>
+            Example: In this case, we want to deposit 1 AVAX. This will result in us having to deposit an equivalent value
+            of PNG tokens, which at the current rate is 28.3791 PNG tokens.
+            <img src="/tutorials/manage-liquidity/005.png"></li>
+          <li>Select &quot;Confirm Supply,&quot; and confirm the transaction on MetaMask.
+            <img src="/tutorials/manage-liquidity/006.png"></li></ol></li></ol>
+
+    <h3 class="flex whitespace-pre-wrap group" id="managing-a-liquidity-pool"><a href="#managing-a-liquidity-pool" class="absolute no-underline opacity-0 after:hash group-hover:opacity-100" aria-label="Anchor" style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span>Managing a Liquidity Pool
+      </span></h3>
+
+    <p>Once you create a new liquidity pool or add to an existing one, you will automatically have your position visible,
+      allowing you to manage the liquidity pool by adding or removing liquidity.
+    </p>
+
+    <img src="/tutorials/manage-liquidity/007.png">
+
+    <p>You may view details about your position when you click on the &quot;Manage&quot; dropdown.</p>
+
+    <p>Here are four stats that give information about your position:</p>
+    <ul><li>Your pool tokens: tokens issued to you that represent your position in the liquidity pool</li>
+      <li>Pooled Token #1</li>
+      <li>Pooled Token #2</li>
+      <li>Your pool share: the percentage of the liquidity pool that your deposited tokens represent</li></ul>
+    <img src="/tutorials/manage-liquidity/008.png">
+
+    <h4 class="flex whitespace-pre-wrap group" id="removing-liquidity-from-a-liquidity-pool"><a href="#removing-liquidity-from-a-liquidity-pool" class="absolute no-underline opacity-0 after:hash group-hover:opacity-100" aria-label="Anchor" style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span>Removing Liquidity from a Liquidity Pool</span></h4>
+    <ol><li>Select &quot;Manage&quot;</li>
+      <li>Select &quot;Remove&quot;</li>
+      <li>Determine the number of your tokens that you want to remove from the liquidity pool. In this case, we chose
+        100%.
+        <img src="/tutorials/manage-liquidity/009.png"></li>
+      <li>Select &quot;Remove&quot;</li>
+      <li>Select &quot;Confirm,&quot; and confirm the transaction on MetaMask
+        <img src="/tutorials/manage-liquidity/010.png"></li></ol>
+
+    <h4 class="flex whitespace-pre-wrap group" id="adding-liquidity-to-a-liquidity-pool"><a href="#adding-liquidity-to-a-liquidity-pool" class="absolute no-underline opacity-0 after:hash group-hover:opacity-100" aria-label="Anchor" style="margin-left: -1em; padding-right: 0.5em; box-shadow: none; color: rgb(161, 161, 170);"></a><span>Adding Liquidity to a Liquidity Pool</span></h4>
+
+    <p>If you would like to add more liquidity to your existing liquidity pool, you may do so with the following steps.
+    </p>
+
+    <ol><li>Select &quot;Manage&quot;
+        <img src="/tutorials/manage-liquidity/011.png"></li>
+      <li>Select &quot;Add&quot;
+        <img src="/tutorials/manage-liquidity/012.png"></li>
+      <li>Determine the number of tokens you would like to add to the liquidity pool. In this case, we chose to add 1 PNG
+        token, which means we have to add an equal amount of AVAX.
+        <img src="/tutorials/manage-liquidity/013.png"></li>
+      <li>Select &quot;Supply&quot;</li>
+      <li>Select &quot;Confirm Supply,&quot; and confirm the transaction on MetaMask.
+        <img src="/tutorials/manage-liquidity/014.png"></li></ol></article></div>
+
+    <div class="hidden flex-none pl-8 mr-8 w-64 xl:text-sm xl:block"><div class="flex overflow-y-auto sticky top-4 flex-col justify-between pt-10 pb-6 max-h-screen"><div class="mb-8"><h5 class="mb-3 text-sm font-semibold tracking-wide text-gray-900 uppercase lg:text-xs">On this page</h5>
+          <ul class="overflow-x-hidden font-medium text-gray-500"></ul></div></div></div></div></div>
+  <footer class="mt-4 mb-6 text-center text-gray-500">Made with ⛄ ❤️️</footer></div>
+
+
+
+	
+
+  </body>
+</html>
